@@ -1,0 +1,23 @@
+---
+title: "Milestone 2"
+author: "Angela Fu"
+date: "2/14/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(haven)
+library(tidyverse)
+```
+
+```{r}
+# load in data
+# .dta files require haven package
+food_aid_data <- read_dta(file = "FAid_Final.dta")
+
+# investigate instances of war
+summary(food_aid_data$any_war)
+
+```
+Repo link: https://github.com/angelafu7/milestone-2
